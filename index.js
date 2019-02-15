@@ -42,16 +42,9 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/LunHuayPingpong', function (req, res) {
+app.get('/TestBanHuay', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C52e3c35620f4e35563d988937d4c8b50', respText);
-	return res.sendStatus(200);
-});
-app.post('/LunHuayPingpong', function(req, res) {
-	//log line messages
-
-    const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('C52e3c35620f4e35563d988937d4c8b50', respText);
+    client.pushMessage('C561ef1afeaa810615d2df1e5961f5054', respText);
 	return res.sendStatus(200);
 });
 //End of module

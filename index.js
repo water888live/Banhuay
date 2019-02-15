@@ -44,7 +44,7 @@ app.get('/', function (request, response) {
 //Line push notification module
 app.get('/TestBanHuay', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C561ef1afeaa810615d2df1e5961f5054', respText);
+    client.pushMessage('Cf659dcd9b0d0e6c2529dd92ff7916d9d', respText);
 	return res.sendStatus(200);
 });
 //End of module

@@ -47,6 +47,13 @@ app.get('/TestBanHuay', function (req, res) {
     client.pushMessage('Cf659dcd9b0d0e6c2529dd92ff7916d9d', respText);
 	return res.sendStatus(200);
 });
+
+
+app.get('/BanHuayPingPong', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Cfbdafcc3a324d494c241895cc2186def', respText);
+	return res.sendStatus(200);
+});
 //End of module
 
 

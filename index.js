@@ -87,6 +87,13 @@ app.get('/BanHuayRCAPingpong', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/BanHuayRoumSien', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C6a98dc021759f053b05c9568beb783f2', respText);
+	return res.sendStatus(200);
+});
+
+
 //End of module
 
 

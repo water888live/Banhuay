@@ -55,11 +55,38 @@ app.get('/BanHuay', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/BanHuayVIP1', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C5a60b1f9d1fd56281fc6c0d9f787d834', respText);
+	return res.sendStatus(200);
+});
+
 app.get('/BanHuayVIP2', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
     client.pushMessage('C63659589145c8825b46b8bfa2f970f2a', respText);
 	return res.sendStatus(200);
 });
+
+
+app.get('/BanHuaySuperVIP', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C1dfead39fee57530a3fa3093e236a360', respText);
+	return res.sendStatus(200);
+});
+
+app.get('/BanHuayTestRoom5Day', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Ccbd0377cd442f344e148303835a8cb8b', respText);
+	return res.sendStatus(200);
+});
+
+
+app.get('/BanHuayRCAPingpong', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Cff4272e5b5c57660a255bab2d836a818', respText);
+	return res.sendStatus(200);
+});
+
 //End of module
 
 

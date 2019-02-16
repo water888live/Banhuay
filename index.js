@@ -94,6 +94,12 @@ app.get('/BanHuayRoumSien', function (req, res) {
 });
 
 
+app.get('/BanHuayPingpongRubSub', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C45d056994156e5261d9bf9c49dc0a6c9', respText);
+	return res.sendStatus(200);
+});
+
 //End of module
 
 

@@ -54,6 +54,12 @@ app.get('/BanHuay', function (req, res) {
     client.pushMessage('Cfbdafcc3a324d494c241895cc2186def', respText);
 	return res.sendStatus(200);
 });
+
+app.get('/BanHuayVIP2', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C63659589145c8825b46b8bfa2f970f2a', respText);
+	return res.sendStatus(200);
+});
 //End of module
 
 

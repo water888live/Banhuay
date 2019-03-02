@@ -143,6 +143,13 @@ app.get('/BanHuayVIP8', function (req, res) {
 	return res.sendStatus(200);
 });
 
+
+app.get('/BanHuayVIP7', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C58b5f7b1f101b2228de143ea23056567', respText);
+	return res.sendStatus(200);
+});
+
 //End of module
 
 

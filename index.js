@@ -106,6 +106,12 @@ app.get('/PPgummatan', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/BanHuayVIP3', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C71e61173ab8fd061779aa8a7c45b32f1', respText);
+	return res.sendStatus(200);
+});
+
 
 //End of module
 

@@ -119,6 +119,13 @@ app.get('/BanHuayVIP4', function (req, res) {
 });
 
 
+app.get('/BanHuayVIPLemon', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Cf19817d7d024c87657c480eadd4d049c', respText);
+	return res.sendStatus(200);
+});
+
+
 //End of module
 
 

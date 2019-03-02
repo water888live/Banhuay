@@ -125,6 +125,11 @@ app.get('/BanHuayVIPLemon', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/BanHuayTest5Day', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Ccbd0377cd442f344e148303835a8cb8b', respText);
+	return res.sendStatus(200);
+});
 
 //End of module
 

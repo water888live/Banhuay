@@ -70,7 +70,7 @@ app.get('/BanHuayVIP2', function (req, res) {
 
 app.get('/BanHuaySuperVIP', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C1dfead39fee57530a3fa3093e236a360', respText);
+    client.pushMessage('Cb625908a1165c7e09274a75339c496d6', respText);
 	return res.sendStatus(200);
 });
 

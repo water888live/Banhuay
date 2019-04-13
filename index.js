@@ -158,6 +158,12 @@ app.get('/FunmoneyPingPong', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/RichPingPong', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C5a60b1f9d1fd56281fc6c0d9f787d834', respText);
+	return res.sendStatus(200);
+});
+
 
 //End of module
 

@@ -156,6 +156,12 @@ app.get('/BanHuayVIP9', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/FunmoneyPingPong', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('Cdc1a9062ca476a619b83a1f2b597b06e', respText);
+	return res.sendStatus(200);
+});
+
 
 //End of module
 

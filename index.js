@@ -63,7 +63,7 @@ app.get('/BanHuayVIP1', function (req, res) {
 
 app.get('/BanHuayVIP2', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C63659589145c8825b46b8bfa2f970f2a', respText);
+    client.pushMessage('C58b5f7b1f101b2228de143ea23056567', respText);
 	return res.sendStatus(200);
 });
 

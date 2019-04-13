@@ -110,7 +110,7 @@ app.get('/PPgummatan', function (req, res) {
 
 app.get('/BanHuayVIP4', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C489301cf8fb99c8b8bd44e68c1f28eb5', respText);
+    client.pushMessage('Cb32438771ec4e1a003c8edf1eb0c2e29', respText);
 	return res.sendStatus(200);
 });
 

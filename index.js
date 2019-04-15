@@ -102,7 +102,7 @@ app.get('/BanHuayPingpongRubSub', function (req, res) {
 
 app.get('/PPgummatan', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C31ef3d081823bd1ca517cee51a333db3', respText);
+    client.pushMessage('Ubc400b0d50d6fac888741703b9a181c9', respText);
 	return res.sendStatus(200);
 });
 

@@ -164,6 +164,12 @@ app.get('/RichPingPong', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.get('/BanHuayVIP5PP', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C4c5eb1aa6da1f01b4284796835f64bc9', respText);
+	return res.sendStatus(200);
+});
+
 
 //End of module
 

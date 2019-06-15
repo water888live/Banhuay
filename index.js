@@ -52,6 +52,8 @@ app.get('/TestBanHuay', function (req, res) {
 app.get('/BanHuay', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
     client.pushMessage('Cfbdafcc3a324d494c241895cc2186def', respText);
+	console.log(req.body.events[0].source);
+   	console.log(req.body.events[0]);
 	return res.sendStatus(200);
 });
 

@@ -52,8 +52,7 @@ app.get('/TestBanHuay', function (req, res) {
 app.get('/BanHuay', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
     client.pushMessage('Cfbdafcc3a324d494c241895cc2186def', respText);
-	console.log(req.body.events[0].source);
-   	console.log(req.body.events[0]);
+	console.log(req);
 	return res.sendStatus(200);
 });
 
@@ -157,8 +156,7 @@ app.get('/BanHuayVIP9', function (req, res) {
 app.get('/FunmoneyPingPong', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
     client.pushMessage('Cdc1a9062ca476a619b83a1f2b597b06e', respText);
-	console.log(req.body.events[0].source);
-   	console.log(req.body.events[0]);
+	console.log(req);
 	return res.sendStatus(200);
 });
 

@@ -38,7 +38,7 @@ app.post('/callback', (req, res) => {
 });
 
 app.get('/', function (request, response) {
-    response.send('This is MGL Line Bot.');
+    response.send('hhhomehuay.');
 });
 
 //Line push notification module

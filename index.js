@@ -66,6 +66,20 @@ app.post('/lonelyfriend', function(req, res){
     client.pushMessage('C5bb83eb2a5f690bceea200f7d8825294', respText);
 	return res.sendStatus(200);
 });
+
+
+app.get('/PingPongRich', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C7e744383a007e5e2286abcb16f32d3c6', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/PingPongRich', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C7e744383a007e5e2286abcb16f32d3c6', respText);
+	return res.sendStatus(200);
+});
+
 //============================
 
 app.get('/BanHuay', function (req, res) {

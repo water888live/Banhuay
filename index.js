@@ -48,6 +48,12 @@ app.get('/testbot', function (req, res) {
 	return res.sendStatus(200);
 });
 
+app.post('/testbot', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('Caebad1cc1be04abc1adc6abf521cbb5b', respText);
+	return res.sendStatus(200);
+});
+
 
 app.get('/BanHuay', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };

@@ -55,7 +55,17 @@ app.post('/testbot', function(req, res){
 });
 //============================
 
+app.get('/PingPongRich', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C7e744383a007e5e2286abcb16f32d3c6', respText);
+	return res.sendStatus(200);
+});
 
+app.post('/PingPongRich', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C7e744383a007e5e2286abcb16f32d3c6', respText);
+	return res.sendStatus(200);
+});
 
 //End of modul
 // event handler

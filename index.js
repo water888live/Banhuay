@@ -67,6 +67,18 @@ app.post('/PingPongRich', function(req, res){
 	return res.sendStatus(200);
 });
 
+app.get('/homehuayDotCom', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C7582d5e4f2fb3f69286aa5707d69960c', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/homehuayDotCom', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C7582d5e4f2fb3f69286aa5707d69960c', respText);
+	return res.sendStatus(200);
+});
+
 //End of modul
 // event handler
 function handleEvent(event) {

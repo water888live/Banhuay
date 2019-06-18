@@ -91,6 +91,18 @@ app.post('/PingPongLemon', function(req, res){
 	return res.sendStatus(200);
 });
 
+app.get('/ParuayHomehuay', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C950d289663f819159cf0bcac68d2bef7', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/ParuayHomehuay', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C950d289663f819159cf0bcac68d2bef7', respText);
+	return res.sendStatus(200);
+});
+
 //End of modul
 // event handler
 function handleEvent(event) {

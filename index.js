@@ -173,9 +173,7 @@ app.get('/BanHuayVIP5PP', function (req, res) {
 });
 
 
-//End of module
-
-
+//End of modul
 // event handler
 function handleEvent(event) {
   if (event.type !== 'message' || event.message.type !== 'text') {

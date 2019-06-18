@@ -42,9 +42,9 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/TestBanHuay', function (req, res) {
+app.get('/testbot', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('Cf659dcd9b0d0e6c2529dd92ff7916d9d', respText);
+    client.pushMessage('Caebad1cc1be04abc1adc6abf521cbb5b', respText);
 	return res.sendStatus(200);
 });
 

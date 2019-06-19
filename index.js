@@ -103,6 +103,44 @@ app.post('/ParuayHomehuay', function(req, res){
 	return res.sendStatus(200);
 });
 
+app.get('/VIP1', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C1b7f0a4123b20767aac7f189c4f2d7df', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/VIP1', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C1b7f0a4123b20767aac7f189c4f2d7df', respText);
+	return res.sendStatus(200);
+});
+
+app.get('/VIP2', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C7f4fc4b351dd70e28fb87f07b72ac41d', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/VIP2', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C7f4fc4b351dd70e28fb87f07b72ac41d', respText);
+	return res.sendStatus(200);
+});
+
+app.get('/VIP3', function (req, res) {
+    const respText = { type: 'text', text: req.query.respText };
+    client.pushMessage('C91a3244c0a8c26a8714400ced5795528', respText);
+	return res.sendStatus(200);
+});
+
+app.post('/VIP3', function(req, res){
+    const respText = { type: 'text', text: req.body.message };
+    client.pushMessage('C91a3244c0a8c26a8714400ced5795528', respText);
+	return res.sendStatus(200);
+});
+
+
+
 //End of modul
 // event handler
 function handleEvent(event) {
